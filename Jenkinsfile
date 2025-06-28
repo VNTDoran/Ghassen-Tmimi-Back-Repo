@@ -26,12 +26,6 @@ pipeline {
             }
         }
 
-	stage('Install Maven') {
-            steps {
-                sh 'apt-get update && apt-get install -y maven'
-            }
-        }
-
         stage('⚙️ Build & Test') {
             steps {
                 echo "🛠️ Running Maven build and unit tests..."
